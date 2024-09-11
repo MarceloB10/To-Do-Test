@@ -1,6 +1,6 @@
 # To-Do List API
 
-Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con Django Rest Framework. La API incluye operaciones básicas de CRUD para las tareas, además de pruebas unitarias, pruebas de integración, loggers, documentación swagger, Docker, y más.
+Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con Django Rest Framework. La API incluye operaciones básicas de CRUD para las tareas, además de pruebas unitarias, pruebas de integración, loggers, documentación swagger, Docker, GraphQL y más.
 
 ## Requerimientos
 

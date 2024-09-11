@@ -8,7 +8,8 @@ from django.shortcuts import get_object_or_404
 from drf_spectacular.utils import extend_schema, OpenApiResponse
 
 # Get the logger for the 'tasks' app
-logger = logging.getLogger('tasks')
+logger = logging.getLogger("tasks")
+
 
 class TaskViewSet(viewsets.ViewSet):
 
