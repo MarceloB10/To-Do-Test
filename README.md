@@ -15,7 +15,7 @@ Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con 
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone [https://github.com/usuario/repo.git](https://github.com/MarceloB10/To-Do-Test)
+git clone https://github.com/MarceloB10/To-Do-Test
 cd To-Do-Test
 ```
 
@@ -54,7 +54,7 @@ El servidor estará disponible en http://localhost:8000.
 
 La API incluye documentación automática con Swagger. Una vez que la aplicación esté corriendo, puedes acceder a la documentación en:
 
-- **Swagger UI**: `http://localhost:8000/api/schema/swagger-ui/`
+- **Swagger UI**: `http://localhost:8000/api/schema/swagger-ui/` (Permite realizar pruebas con la API)
 - **ReDoc UI**: `http://localhost:8000//api/schema/redoc/`
 
 ## Endpoints de la API
