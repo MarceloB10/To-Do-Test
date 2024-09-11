@@ -47,8 +47,8 @@ Inicia el servidor de desarrollo de Django:
 
 ```bash
 python manage.py runserver
-El servidor estará disponible en http://localhost:8000.
 ```
+El servidor estará disponible en http://localhost:8000.
 
 ### Documentación con Swagger
 
