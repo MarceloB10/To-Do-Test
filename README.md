@@ -149,7 +149,6 @@ La API también soporta consultas y mutaciones usando GraphQL. La interfaz de Gr
 ```
 ### Ejemplo de mutación (create task):
 ```graphql
-Copy code
 mutation {
   createTask(title: "Nueva tarea", description: "Descripción de la tarea", completed: false) {
     id
