@@ -1,13 +1,13 @@
 # To-Do List API
 
-Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con Django Rest Framework. La API incluye operaciones básicas de CRUD para las tareas, además de pruebas unitarias, configuración con Docker, y más.
+Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con Django Rest Framework. La API incluye operaciones básicas de CRUD para las tareas, además de pruebas unitarias, pruebas de integración, documentación swagger, Docker, y más.
 
 ## Requerimientos
 
 - Python 3.9 o superior
 - Django 3.0 o superior
 - Django Rest Framework
-- Docker (opcional para contenedores)
+- Docker
 
 ## Instrucciones para configurar el entorno local
 
@@ -15,8 +15,8 @@ Esta es una API REST para gestionar una lista de tareas (To-Do List) creada con 
 Clona este repositorio en tu máquina local:
 
 ```bash
-git clone https://github.com/usuario/repo.git
-cd repo
+git clone [https://github.com/usuario/repo.git](https://github.com/MarceloB10/To-Do-Test)
+cd To-Do-Test
 ```
 
 ### Paso 2: Crear un entorno virtual
@@ -25,7 +25,6 @@ Crea y activa un entorno virtual para instalar las dependencias:
 ```bash
 python3 -m venv env
 source env/bin/activate  # En macOS/Linux
-# o
 env\Scripts\activate  # En Windows
 ```
 
@@ -37,7 +36,7 @@ pip install -r requirements.txt
 ```
 
 ### Paso 4: Configurar la base de datos
-Realiza las migraciones para configurar la base de datos local:
+Realiza las migraciones para configurar la base de datos local (SQLite):
 
 ```bash
 python manage.py migrate
@@ -50,6 +49,13 @@ Inicia el servidor de desarrollo de Django:
 python manage.py runserver
 El servidor estará disponible en http://localhost:8000.
 ```
+
+### Documentación con Swagger
+
+La API incluye documentación automática con Swagger. Una vez que la aplicación esté corriendo, puedes acceder a la documentación en:
+
+- **Swagger UI**: `http://localhost:8000/api/schema/swagger-ui/`
+- **ReDoc UI**: `http://localhost:8000//api/schema/redoc/`
 
 ## Endpoints de la API
 
@@ -122,10 +128,3 @@ Para detener y eliminar los contenedores de Docker, ejecuta:
 ```bash
 docker-compose down
 ```
-
-## Documentación con Swagger
-
-La API incluye documentación automática con Swagger. Una vez que la aplicación esté corriendo, puedes acceder a la documentación en:
-
-- **Swagger UI**: `http://localhost:8000/swagger/`
-- **ReDoc UI**: `http://localhost:8000/redoc/`
