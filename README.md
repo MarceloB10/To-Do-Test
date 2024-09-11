@@ -80,7 +80,7 @@ La API incluye documentación automática con Swagger. Una vez que la aplicació
 
 ## Ejecución de pruebas
 
-### Las pruebas unitarias están incluidas y se ejecutan con el comando:
+### Las pruebas unitarias y de integración están incluidas y se ejecutan con el comando:
 
 ```bash
 python manage.py test
