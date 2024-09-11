@@ -128,3 +128,34 @@ Para detener y eliminar los contenedores de Docker, ejecuta:
 ```bash
 docker-compose down
 ```
+
+# Bonus: GraphQL
+
+## Uso de la API (GraphQL)
+La API también soporta consultas y mutaciones usando GraphQL. La interfaz de GraphQL está disponible en:
+
+- **URL**: `http://localhost:8000/api/graphql/`
+
+### Ejemplo de consulta (fetch all tasks):
+```graphql
+{
+  allTasks {
+    id
+    title
+    description
+    completed
+  }
+}
+```
+### Ejemplo de mutación (create task):
+```graphql
+Copy code
+mutation {
+  createTask(title: "Nueva tarea", description: "Descripción de la tarea", completed: false) {
+    id
+    title
+    description
+    completed
+  }
+}
+```
