@@ -122,7 +122,7 @@ Esto levantará el contenedor con la aplicación y la base de datos. La API esta
 http://localhost:8000
 ```
 
-### Paso 2: Detener y eliminar los contenedores
+### Paso 2: Detener y remover los contenedores
 Para detener y eliminar los contenedores de Docker, ejecuta:
 
 ```bash
