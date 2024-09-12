@@ -55,7 +55,7 @@ El servidor estará disponible en http://localhost:8000.
 La API incluye documentación automática con Swagger. Una vez que la aplicación esté corriendo, puedes acceder a la documentación en:
 
 - **Swagger UI**: `http://localhost:8000/api/schema/swagger-ui/` (Permite realizar pruebas con la API)
-- **ReDoc UI**: `http://localhost:8000//api/schema/redoc/`
+- **ReDoc UI**: `http://localhost:8000/api/schema/redoc/`
 
 ## Endpoints de la API
 
@@ -80,7 +80,7 @@ La API incluye documentación automática con Swagger. Una vez que la aplicació
 
 ## Ejecución de pruebas
 
-### Las pruebas unitarias están incluidas y se ejecutan con el comando:
+### Las pruebas unitarias y de integración están incluidas y se ejecutan con el comando:
 
 ```bash
 python manage.py test
