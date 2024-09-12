@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import TaskViewSet
 from strawberry.django.views import GraphQLView
+
 from .schema import schema
+from .views import TaskViewSet
 
 urlpatterns = [
     path(

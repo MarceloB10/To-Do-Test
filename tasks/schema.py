@@ -1,10 +1,10 @@
 # tasks/schema.py
-import strawberry
 from typing import List
-from strawberry.types import Info
+
+import strawberry
 from strawberry import auto
+
 from .models import Task
-from .serializers import TaskSerializer
 
 
 @strawberry.django.type(Task)

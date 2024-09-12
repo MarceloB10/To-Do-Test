@@ -1,11 +1,12 @@
 import logging
-from rest_framework import viewsets
+
+from django.shortcuts import get_object_or_404
+from drf_spectacular.utils import OpenApiResponse, extend_schema
+from rest_framework import status, viewsets
 from rest_framework.response import Response
-from rest_framework import status
+
 from .models import Task
 from .serializers import TaskSerializer
-from django.shortcuts import get_object_or_404
-from drf_spectacular.utils import extend_schema, OpenApiResponse
 
 # Get the logger for the 'tasks' app
 logger = logging.getLogger("tasks")
